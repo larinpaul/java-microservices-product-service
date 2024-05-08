@@ -42,7 +42,7 @@ class JavaMicroservicesProductServiceApplicationTests {
 	}
 
 	@Test
-	void shouldCreateProduct() throws JsonProcessingException {
+	void shouldCreateProduct() throws Exception {
 		ProductRequest productRequest = getProductRequest();
 		String productRequestString = objectMapper.writeValueAsString(productRequest);
 		objectMapper.writeValueAsString(productRequest);
